@@ -8,7 +8,18 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     var message = 'Hello JavaScript';
     println(message);
   }
+  function Test() {
+  }
+  Test.prototype.A = function () {
+    println('function A');
+  };
+  Test.$metadata$ = {
+    kind: Kotlin.Kind.CLASS,
+    simpleName: 'Test',
+    interfaces: []
+  };
   _.main_kand9s$ = main;
+  _.Test = Test;
   Kotlin.defineModule('kotlin-js-sample', _);
   main([]);
   return _;
