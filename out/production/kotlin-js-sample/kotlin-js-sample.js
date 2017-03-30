@@ -17,10 +17,12 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     println(man.toString());
     var dny = 2;
     println(dny);
-    dny.foo().bar.bad().dldldld().sss().ttt();
   }
   function hello($receiver) {
     println($receiver);
+  }
+  function isTypeOf(message) {
+    console.log(message);
   }
   function Man(name, sex, age) {
     if (sex === void 0)
@@ -61,6 +63,7 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   };
   _.main_kand9s$ = main;
   _.hello_s8ev3n$ = hello;
+  _.isTypeOf_61zpoe$ = isTypeOf;
   var package$testa = _.testa || (_.testa = {});
   package$testa.Man = Man;
   package$testa.Person = Person;

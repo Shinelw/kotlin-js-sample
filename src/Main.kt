@@ -11,11 +11,17 @@ fun main(args: Array<String>) {
     println(man.toString())
     var dny: dynamic = 2
     println(dny)
-    dny.foo().bar.bad().dldldld().sss().ttt()
+    jsTypeOf("Kotlin form JavaScript")
+
+
 
 }
 fun Int.hello() {
     println(this)
+}
+
+fun isTypeOf(message: String) {
+    js("console.log(message)")
 }
 
 
