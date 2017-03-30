@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
     var dny: dynamic = 2
     println(dny)
     jsTypeOf("Kotlin form JavaScript")
-
+    f()
 
 
 }
@@ -26,5 +26,10 @@ fun isTypeOf(message: String) {
 
 fun hello() {
     println("hellow")
+}
+fun f() {
+    val x: Int = 23
+    val y: Any = x
+    println(y as Float)
 }
 

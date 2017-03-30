@@ -17,6 +17,7 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     println(man.toString());
     var dny = 2;
     println(dny);
+    f();
   }
   function hello($receiver) {
     println($receiver);
@@ -26,6 +27,12 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   }
   function hello_0() {
     println('hellow');
+  }
+  function f() {
+    var tmp$;
+    var x = 23;
+    var y = x;
+    println(typeof (tmp$ = y) === 'number' ? tmp$ : Kotlin.throwCCE());
   }
   function Man(name, sex, age) {
     if (sex === void 0)
@@ -68,6 +75,7 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   _.hello_s8ev3n$ = hello;
   _.isTypeOf_61zpoe$ = isTypeOf;
   _.hello = hello_0;
+  _.f = f;
   var package$testa = _.testa || (_.testa = {});
   package$testa.Man = Man;
   package$testa.Person = Person;

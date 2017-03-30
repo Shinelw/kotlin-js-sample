@@ -5,5 +5,3 @@
 function o() {
     console.log("js from kotlin")
 }
-
-alert(kotlin-js-sample.hello())
