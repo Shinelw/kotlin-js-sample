@@ -9,5 +9,7 @@ class Person(val name: String) {
     @JsName("helloWithGreeting")
     fun hello(greeting: String) {
         println("$greeting $name!")
+        js("console.log(greeting)")
     }
+
 }

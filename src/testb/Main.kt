@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
     println(dny)
     jsTypeOf("Kotlin form JavaScript")
     f()
-
+    alert("external test")
 
 }
 fun Int.hello() {
@@ -34,4 +34,6 @@ fun f() {
     val y: Any = x
     println(y as Float)
 }
+
+external fun alert(message: Any?): Unit
 

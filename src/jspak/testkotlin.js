@@ -6,4 +6,4 @@ function o() {
     console.log("js from kotlin")
 }
 
-console.log(testb.hello())
+console.log()

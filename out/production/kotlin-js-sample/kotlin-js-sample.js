@@ -43,6 +43,7 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     var dny = 2;
     println(dny);
     f();
+    alert('external test');
   }
   function hello($receiver) {
     println($receiver);
