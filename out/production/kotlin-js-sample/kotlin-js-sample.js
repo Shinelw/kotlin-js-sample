@@ -9,31 +9,6 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   Man.prototype.constructor = Man;
   A.prototype = Object.create(Person.prototype);
   A.prototype.constructor = A;
-  function main(args) {
-    var message = 'Hello JavaScript';
-    var list = arrayListOf([1, 2, 3, 4, 5]);
-    var longnum;
-    var man = new Man('hahah');
-    println(man.toString());
-    var dny = 2;
-    println(dny);
-    f();
-  }
-  function hello($receiver) {
-    println($receiver);
-  }
-  function isTypeOf(message) {
-    console.log(message);
-  }
-  function hello_0() {
-    println('hellow');
-  }
-  function f() {
-    var tmp$;
-    var x = 23;
-    var y = x;
-    println(typeof (tmp$ = y) === 'number' ? tmp$ : Kotlin.throwCCE());
-  }
   function Man(name, sex, age) {
     if (sex === void 0)
       sex = 0;
@@ -59,6 +34,31 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     simpleName: 'Person',
     interfaces: []
   };
+  function main(args) {
+    var message = 'Hello JavaScript';
+    var list = arrayListOf([1, 2, 3, 4, 5]);
+    var longnum;
+    var man = new Man('hahah');
+    println(man.toString());
+    var dny = 2;
+    println(dny);
+    f();
+  }
+  function hello($receiver) {
+    println($receiver);
+  }
+  function isTypeOf(message) {
+    console.log(message);
+  }
+  function hello_0() {
+    println('hellow');
+  }
+  function f() {
+    var tmp$;
+    var x = 23;
+    var y = x;
+    println(typeof (tmp$ = y) === 'number' ? tmp$ : Kotlin.throwCCE());
+  }
   function A(name, sex, age) {
     if (sex === void 0)
       sex = 0;
@@ -71,14 +71,15 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     simpleName: 'A',
     interfaces: [Person]
   };
-  _.main_kand9s$ = main;
-  _.hello_s8ev3n$ = hello;
-  _.isTypeOf_61zpoe$ = isTypeOf;
-  _.hello = hello_0;
-  _.f = f;
   var package$testa = _.testa || (_.testa = {});
   package$testa.Man = Man;
   package$testa.Person = Person;
+  var package$testb = _.testb || (_.testb = {});
+  package$testb.main_kand9s$ = main;
+  package$testb.hello_s8ev3n$ = hello;
+  package$testb.isTypeOf_61zpoe$ = isTypeOf;
+  package$testb.hello = hello_0;
+  package$testb.f = f;
   package$testa.A = A;
   Kotlin.defineModule('kotlin-js-sample', _);
   main([]);

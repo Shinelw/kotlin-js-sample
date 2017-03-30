@@ -1,3 +1,5 @@
+package testb
+
 import testa.Man
 
 /**
