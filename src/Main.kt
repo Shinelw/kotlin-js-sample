@@ -24,4 +24,7 @@ fun isTypeOf(message: String) {
     js("console.log(message)")
 }
 
+fun hello() {
+    println("hellow")
+}
 

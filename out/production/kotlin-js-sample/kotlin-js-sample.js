@@ -24,6 +24,9 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   function isTypeOf(message) {
     console.log(message);
   }
+  function hello_0() {
+    println('hellow');
+  }
   function Man(name, sex, age) {
     if (sex === void 0)
       sex = 0;
@@ -64,6 +67,7 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
   _.main_kand9s$ = main;
   _.hello_s8ev3n$ = hello;
   _.isTypeOf_61zpoe$ = isTypeOf;
+  _.hello = hello_0;
   var package$testa = _.testa || (_.testa = {});
   package$testa.Man = Man;
   package$testa.Person = Person;

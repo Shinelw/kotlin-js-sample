@@ -3,32 +3,14 @@ if (typeof kotlin === 'undefined') {
 }
 var second = function (_, Kotlin) {
   'use strict';
-  Man.prototype = Object.create(Person.prototype);
-  Man.prototype.constructor = Man;
-  function Man(name, sex, age) {
-    if (sex === void 0)
-      sex = 0;
-    if (age === void 0)
-      age = 11;
-    Person.call(this, name, sex, age);
+  function Tests() {
   }
-  Man.$metadata$ = {
+  Tests.$metadata$ = {
     kind: Kotlin.Kind.CLASS,
-    simpleName: 'Man',
-    interfaces: [Person]
-  };
-  function Person(name, sex, age) {
-    this.name = name;
-    this.sex = sex;
-    this.age = age;
-  }
-  Person.$metadata$ = {
-    kind: Kotlin.Kind.CLASS,
-    simpleName: 'Person',
+    simpleName: 'Tests',
     interfaces: []
   };
-  _.Man = Man;
-  _.Person = Person;
+  _.Tests = Tests;
   Kotlin.defineModule('second', _);
   return _;
 }(typeof second === 'undefined' ? {} : second, kotlin);
