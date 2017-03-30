@@ -15,6 +15,9 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     var longnum;
     var man = new Man('hahah');
     println(man.toString());
+    var dny = 2;
+    println(dny);
+    dny.foo().bar.bad().dldldld().sss().ttt();
   }
   function hello($receiver) {
     println($receiver);

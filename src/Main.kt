@@ -9,6 +9,9 @@ fun main(args: Array<String>) {
     var longnum: Int
     var man = Man("hahah")
     println(man.toString())
+    var dny: dynamic = 2
+    println(dny)
+    dny.foo().bar.bad().dldldld().sss().ttt()
 
 }
 fun Int.hello() {
