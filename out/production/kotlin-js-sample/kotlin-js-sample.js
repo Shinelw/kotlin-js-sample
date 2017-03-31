@@ -59,6 +59,8 @@ this['kotlin-js-sample'] = function (_, Kotlin) {
     var x = 23;
     var y = x;
     println(typeof (tmp$ = y) === 'number' ? tmp$ : Kotlin.throwCCE());
+    var Kotlin_0 = 1;
+    println(Kotlin_0);
   }
   function A(name, sex, age) {
     if (sex === void 0)

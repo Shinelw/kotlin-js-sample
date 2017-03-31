@@ -15,6 +15,9 @@ var kjs = function (_, Kotlin) {
     println(greeting + ' ' + this.name + '!');
     console.log(greeting);
   };
+  Person.prototype.testSubtraction = function (a, b) {
+    return a.subtract(b);
+  };
   Person.$metadata$ = {
     kind: Kotlin.Kind.CLASS,
     simpleName: 'Person',
@@ -51,6 +54,8 @@ var kjs = function (_, Kotlin) {
     println(Kotlin.getKClass(C).simpleName);
     println(get_js(Kotlin.getKClass(B)).name);
     Kotlin.kotlin.io.println_s8jyv4$(Kotlin.getKClass(C).simpleName);
+    var person = new Person('Lily');
+    println('LongTest');
   }
   _.Person = Person;
   _.A = A;

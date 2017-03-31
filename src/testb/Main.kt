@@ -33,6 +33,8 @@ fun f() {
     val x: Int = 23
     val y: Any = x
     println(y as Float)
+    val Kotlin = 1
+    println(Kotlin)
 }
 
 external fun alert(message: Any?): Unit

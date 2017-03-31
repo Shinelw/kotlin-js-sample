@@ -17,4 +17,6 @@ fun main(args: Array<String>) {
     println(C::class.simpleName)
     println(B::class.js.name)
     foo<C>()
+    val person = Person("Lily")
+    println("LongTest")
 }

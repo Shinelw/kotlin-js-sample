@@ -12,4 +12,11 @@ class Person(val name: String) {
         js("console.log(greeting)")
     }
 
+    @JsName("testSubtraction")
+    fun testSubtraction(a: Long, b: Long) : Long {
+
+        return a - b
+
+    }
+
 }

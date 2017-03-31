@@ -4,3 +4,4 @@
 var person = new kjs.Person("Dmitry")
 person.hello()
 person.helloWithGreeting("Servus")
+person.testSubtraction(111,1)
